@@ -1,0 +1,9 @@
+.intro {
+    background-image: url("images/blueshadows.jpg")
+}
+.flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
