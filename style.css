@@ -1,5 +1,9 @@
 .intro {
-    background-image: url("images/blueshadows.jpg")
+    background-image: url("images/blueshadows.jpg");
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .flex {
     display: flex;
