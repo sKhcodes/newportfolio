@@ -7,6 +7,7 @@ let firstdiv = document.querySelector("#firstOne");
 let nextdiv = document.querySelector("#nextOne");
 let lastdiv = document.querySelector("#lastOne");
 let btn = document.querySelector("button");
+let sect = document.querySelectorAll(".section");
 function typeWriter(txtname, divname, i) {
     i || (i = 0);
 
@@ -25,6 +26,8 @@ lastdiv.addEventListener("animationend", function() {
  });
 
  btn.addEventListener("click", function() {
-     document.querySelector("#about").style.display = "block";
+     for (div of sect) {
+         div.style.display = "block";
+     }
  })
  
