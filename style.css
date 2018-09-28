@@ -74,3 +74,8 @@
     60% {text-shadow: 2px 2px 5px palegoldenrod;}
     100% {text-shadow: 0px;}
 }
+nav {
+    height: 5em;
+    width: 100%;
+    background-color: white;
+}
