@@ -78,4 +78,25 @@ nav {
     height: 5em;
     width: 100%;
     background-color: white;
+    display:none;
 }
+
+button {
+    height: 3em;
+    width: 8em;
+    align-self: flex-end;
+    position: fixed;
+    margin-bottom: 100px;
+    display: block;
+    background-color:  rgb(243, 233, 120);
+    border-color: goldenrod;
+    color: rgb(134, 99, 9);
+    font-style: bold;
+    font-family: 'Fahkwang', sans-serif;
+    font-size: 2em;
+    border-radius: 45%;
+}
+
+@keyframes animate-drop {   
+    0% {opacity:0;transform: translate(0, -315px);}
+    100% {opacity:1;transform: translate(0, 0);}
