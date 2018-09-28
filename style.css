@@ -6,26 +6,71 @@
     align-items: center;
 }
 .flex {
+
+}
+
+.typedElements {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column; 
 }
 
-.firstOne{
-    color:yellow;
+.typed{
+    color:goldenrod;
     font-size: 2em;
     display: inline-block;
+    font-family: 'Fahkwang', sans-serif;
 }
+
 #cursor {
-    color: yellow;
+    color: goldenrod;
     font-size: 2em;
     display: inline-block;
     animation-name: flash;
     animation-duration: 0.3s;
     animation-iteration-count: infinite;
 }
+#bloodycursor {
+    height: 10px;
+    width: 2px;
+    background-color: white;
+}
+#firstOne{
+    animation-name: glow;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+
+#nextOne {
+    animation-name: glowagain;
+    animation-duration: 6s;
+    animation-iteration-count: 1;   
+}
+
+#lastOne {
+    animation-name: finalglow;
+    animation-duration: 6s;
+    animation-iteration-count: 2;
+}
 @keyframes flash {
  0% {opacity: 1;}
     50% {opacity: 0;}
     100% {opacity: 1;}
+}
+ @keyframes glow {
+     0% {text-shadow: 0px;}
+     60% {text-shadow: 2px 2px 5px palegoldenrod;}
+     100% {text-shadow: 0px;}
+ }
+ @keyframes glowagain {
+    0% {text-shadow: 0px;}
+    60% {text-shadow: 1px 1px 3px palegoldenrod;}
+    80% {text-shadow: 2px 2px 5px palegoldenrod;}
+    100% {text-shadow: 0px;}
+}
+@keyframes finalglow {
+    0% {text-shadow: 0px;}
+    60% {text-shadow: 2px 2px 5px palegoldenrod;}
+    100% {text-shadow: 0px;}
 }

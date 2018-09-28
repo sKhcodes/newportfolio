@@ -1,10 +1,21 @@
 let i = 0;
-let txt = 'Lorem ipsum typing effect!';
+let txtOne = 'Hi.';
+let txtTwo = 'My name is Sarah ';
+let txtThree = " and I'm learning web development.";
 let speed = 100; 
-window.onload = function typeWriter() {
-    if (i < txt.length) {
-document.querySelector(".firstOne").innerHTML += txt.charAt(i);
-       i++;
-        setTimeout(typeWriter, speed);
+let firstdiv = document.querySelector("#firstOne");
+let nextdiv = document.querySelector("#nextOne");
+let lastdiv = document.querySelector("#lastOne");
+
+function typeWriter(txtname, divname, i) {
+    i || (i = 0);
+
+    if (i < txtname.length) {
+        divname.innerHTML += txtname.charAt(i);
+        setTimeout(function () { typeWriter(txtname, divname, i + 1) }, speed);
     }
 }
+
+window.onload = function() { typeWriter(txtOne, firstdiv) };
+firstdiv.addEventListener("animationend", function() { typeWriter(txtTwo, nextdiv) });
+nextdiv.addEventListener("animationend", function() { typeWriter(txtThree, lastdiv) });

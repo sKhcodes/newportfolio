@@ -1,13 +1,30 @@
 <head>
 <link rel="stylesheet" type="text/css" href="style.css">
+<link href="https://fonts.googleapis.com/css?family=Fahkwang" rel="stylesheet">
 </head>
 <body>
 <div class = "intro">
     <div class="flex">
-      <span class = "firstOne"></span> <span id = "cursor"> |</span> 
+      <div class = "typedElements">
+        <span class = "typed" id ="firstOne" ></span> 
+         <span class = "typed" id ="nextOne"></span>
+          <span class = "typed" id ="lastOne"></span>
+            </div>
+            <!-- This needs a flasing cursor!  How to make it move with the spans....??? -->
     </div>
 </div>
-<div id = "navbar"></div>
+<!-- Button needs to drop down to find out more, then page expands to show navbar -->
+<nav>
+  <div class="nav-wrapper">
+    <a href="#" class="skh-logo">Logo</a>
+    <ul id="nav-mobile" class="right hide-on-med-and-down">
+      <li><a href=#about>about</a></li>
+      <li><a href=#projects>projects</a></li>
+      <li><a href=#contact>contact</a></li>
+    </ul>
+  </div>
+</nav>
+
 <div id = "about"></div>
 <div id = "projects"></div>
 <div id = "contact"></div>
