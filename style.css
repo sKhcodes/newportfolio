@@ -82,8 +82,8 @@ nav {
 }
 
 button {
-    height: 3em;
-    width: 8em;
+    height: 2em;
+    width: 6em;
     align-self: flex-end;
     position: absolute;
     margin-bottom: 100px;
