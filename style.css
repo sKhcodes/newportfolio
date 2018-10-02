@@ -1,3 +1,5 @@
+/* header styles */
+
 .intro {
     background-image: url("images/polyhedrongs.jpg#");
     height: 100%;
@@ -104,6 +106,7 @@ button {
     100% {opacity:1;transform: translate(0, 0);}
 }
 
+/* section styles */
 .section{
 height: 50%;
 width: 100%;
@@ -114,15 +117,16 @@ border-style: groove;
 border-width: 0.5em;
 border-color: #d0d8f0;
     }
-    #about {
-        background-color:#d0d8f0;
-    }
-    #projects {
-        background-color:#6F8293;
-    }
+   
     #contact {
         background-color:#646D71;
     }
+
+    /* about me section styles */
+    #about {
+        background-color:#d0d8f0;
+    }
+
 #banner {
     grid-column-start: 1;
     grid-column-end: 5;
@@ -160,3 +164,8 @@ border-color: #d0d8f0;
     grid-row-end: 4;
     
 }
+/* projects section styles */
+#projects {
+    background-color:#6F8293;
+}
+.pok
