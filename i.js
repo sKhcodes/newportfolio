@@ -27,7 +27,7 @@ lastdiv.addEventListener("animationend", function() {
 
  btn.addEventListener("click", function() {
      for (div of sect) {
-         div.style.display = "block";
+         div.style.display = "inline-grid";
      }
  })
  

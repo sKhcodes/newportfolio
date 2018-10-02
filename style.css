@@ -1,9 +1,10 @@
 .intro {
-    background-image: url("images/starrysky.jpg");
+    background-image: url("images/polyhedrongs.jpg#");
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-size: cover;
 }
 .flex {
 
@@ -17,8 +18,8 @@
 }
 
 .typed{
-    color:goldenrod;
-    font-size: 2em;
+    color: #424242;
+    font-size: 4em;
     display: inline-block;
     font-family: 'Fahkwang', sans-serif;
 }
@@ -38,7 +39,7 @@
 }
 #firstOne{
     animation-name: glow;
-    animation-duration: 2s;
+    animation-duration: 3s;
     animation-iteration-count: 1;
 }
 
@@ -60,7 +61,7 @@
 }
  @keyframes glow {
      0% {text-shadow: 0px;}
-     60% {text-shadow: 2px 2px 5px palegoldenrod;}
+     60% {text-shadow: 4px 4px 10px grey;}
      100% {text-shadow: 0px;}
  }
  @keyframes glowagain {
@@ -82,20 +83,20 @@ nav {
 }
 
 button {
-    height: 2em;
-    width: 6em;
+    height: 3em;
+    width: 7em;
     align-self: flex-end;
     position: absolute;
     margin-bottom: 100px;
     display: none;
-    background-color:  rgb(243, 233, 120);
-    border-color: goldenrod;
-    color: rgb(134, 99, 9);
+    background-color:  #eef1f7;
+    border-color:#424242;
+    color:#424242;
     font-style: bold;
     font-family: 'Fahkwang', sans-serif;
-    font-size: 2em;
+    font-size: 1em;
     border-radius: 45%;
-    box-shadow: 1px 1px 5px palegoldenrod;
+    box-shadow: 1px 1px 5px grey;
 }
 
 @keyframes animate-drop {   
@@ -104,12 +105,17 @@ button {
 }
 
 .section{
-height: 20%;
+height: 50%;
 width: 100%;
-display: none;
+display: inline-grid;
+grid-template-rows: 1fr 2fr 2fr;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+border-style: groove;
+border-width: 0.5em;
+border-color: #d0d8f0;
     }
     #about {
-        background-color:#3A434D;
+        background-color:#d0d8f0;
     }
     #projects {
         background-color:#6F8293;
@@ -117,3 +123,40 @@ display: none;
     #contact {
         background-color:#646D71;
     }
+#banner {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-color: #b7b1f5;
+    border-style: groove;
+    border-width: 0.5em;
+    border-color: #d0d8f0;
+    grid-gap: 10px;
+}
+#pic {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 4;
+ 
+}
+        #mypic {
+                height: 10em;
+                border-radius: 20%;
+              }
+        
+#text {
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+
+}
+#textlist {
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    
+}
