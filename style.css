@@ -168,4 +168,30 @@ border-color: #d0d8f0;
 #projects {
     background-color:#6F8293;
 }
-.pok
+.projectsflex {
+    display: flex;
+}
+.project1 {
+    background-image: url("https://image.ibb.co/mOFkWU/bridesmaid_box_logo.png");
+}
+project2 {
+    background-image: url("https://image.ibb.co/mOFkWU/bridesmaid_box_logo.png");   
+}
+project3 {
+    background-image: url("https://image.ibb.co/mOFkWU/bridesmaid_box_logo.png");   
+}
+project4 {
+    background-image: url("https://image.ibb.co/mOFkWU/bridesmaid_box_logo.png");   
+}
+project5 {
+    background-image: url("https://image.ibb.co/mOFkWU/bridesmaid_box_logo.png");   
+}
+project6 {
+    background-image: url("https://image.ibb.co/mOFkWU/bridesmaid_box_logo.png");   
+}
+project7 {
+    background-image: url("https://image.ibb.co/mOFkWU/bridesmaid_box_logo.png");   
+}
+project8 {
+    background-image: url("https://image.ibb.co/mOFkWU/bridesmaid_box_logo.png");   
+}
