@@ -37,8 +37,9 @@ lastdiv.addEventListener("animationend", function() {
 
 //  Flex panels for projects
 const projects= document.querySelectorAll('.project');
-projects.forEach(project => projects.addEventListener('click', () => {
+projects.forEach(project => project.addEventListener('click', () => {
   project.classList.toggle('open');
+  console.log(project.classlist);
 }));
 
  

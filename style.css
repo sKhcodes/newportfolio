@@ -1,14 +1,14 @@
 /* header styles */
-
+.holder {
+    background-image: url("images/polyhedrongs.jpg");
+    background-size: cover;
+}
 .intro {
-    background-image: url("images/polyhedrongs.jpg#");
+   
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-size: cover;
-}
-.flex {
 
 }
 
@@ -25,6 +25,7 @@
     display: inline-block;
     font-family: 'Fahkwang', sans-serif;
 }
+/* cursor- in case I want to put it back in */
 
 #cursor {
     color: goldenrod;
@@ -39,6 +40,9 @@
     width: 2px;
     background-color: white;
 }
+
+/*  text and button animations */
+
 #firstOne{
     animation-name: glow;
     animation-duration: 3s;
@@ -83,27 +87,30 @@ nav {
     background-color: white;
     display:none;
 }
-
+#center {
+    justify-content: center;
+    align-items: center;   
+}
 button {
     height: 3em;
     width: 7em;
     align-self: flex-end;
     position: absolute;
-    margin-bottom: 100px;
+    margin: 0;
     display: none;
-    background-color:  #eef1f7;
+    background-color:  rgba(211,211,211, 0.5);
     border-color:#424242;
     color:#424242;
     font-style: bold;
     font-family: 'Fahkwang', sans-serif;
     font-size: 1em;
-    border-radius: 45%;
+    opacity: 0.5;
     box-shadow: 1px 1px 5px grey;
 }
 
 @keyframes animate-drop {   
     0% {opacity:0;transform: translate(0, -315px);}
-    100% {opacity:1;transform: translate(0, 0);}
+    100% {transform: translate(0, 0px);}
 }
 
 /* section styles */
@@ -114,9 +121,12 @@ width: 100%;
 display: inline-grid;
 grid-template-rows: 1fr 2fr 2fr;
 grid-template-columns: 1fr 1fr 1fr 1fr;
-border-style: groove;
+border-style: none;
 border-width: 0.5em;
 border-color: #d0d8f0;
+font-family: 'Montserrat', sans-serif;
+
+
     }
    
     #contact {
@@ -134,16 +144,17 @@ border-color: #d0d8f0;
     grid-row-start: 1;
     grid-row-end: 2;
     background-color: #b7b1f5;
-    border-style: groove;
-    border-width: 0.5em;
-    border-color: #d0d8f0;
     grid-gap: 10px;
+    box-shadow:inset 0 0 0 5px rgba(255,255,255,0.1);
+    text-align: center;
+
 }
 #banner2 {
     background-color: #b7b1f5;
     border-style: groove;
     border-width: 0.5em;
     border-color: #d0d8f0;
+    display: block;
 }
 #pic {
     grid-column-start: 1;
@@ -191,7 +202,17 @@ display: flex;
 flex-direction: column;
     /* check cubic bezier  */
 }
-.project .open {
+.project > * {
+    margin:0;
+    width: 100%;
+    transition:transform 0.5s;
+    flex: 1 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+.project.open {
     flex: 5;
     Font-size: 40px;
 }
@@ -219,6 +240,8 @@ flex-direction: column;
 .project8 {
    background-color: #B8D5F0;
 }
+.project9 {
+    background-color: #ABD5F3 ;  
+}
 
 /* Contact Section Styles */
-
