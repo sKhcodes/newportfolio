@@ -45,13 +45,13 @@
 
 #firstOne{
     animation-name: glow;
-    animation-duration: 3s;
+    animation-duration: 2s;
     animation-iteration-count: 1;
 }
 
 #nextOne {
     animation-name: glowagain;
-    animation-duration: 6s;
+    animation-duration: 4s;
     animation-iteration-count: 1;   
 }
 
@@ -81,24 +81,53 @@
     60% {text-shadow: 2px 2px 5px palegoldenrod;}
     100% {text-shadow: 0px;}
 }
-nav {
-    height: 5em;
+
+/* navbar styles */
+#navbar {
     width: 100%;
     background-color:#b7b1f5;
     display: inline-grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    border-bottom-color: aqua;
+    border-bottom-color: #00ffff;
     border-bottom-style: solid;
+    margin: auto;  
+    text-align: center;
+    justify-content: center;
+    align-items: center; 
     
 }
-nav > li {
-  list-style-type: none;  
+a {
+    text-decoration: none;
+    color: #424242;
+    font-size: 2em;
+    padding: 0.5em;
 }
+
+#navbar a {
+
+  display: block;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  color: #424242;
+}
+#navbar li {
+    list-style-type: none;  
+}
+
 .sticky {
     position: fixed;
     top: 0;
     width: 100%;
   }
+  #navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  #navbar a.active {
+    background-color: #97FFFF; 
+  }
+
 #center {
     justify-content: center;
     align-items: center;   
