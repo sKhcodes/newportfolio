@@ -94,6 +94,11 @@ nav {
 nav > li {
   list-style-type: none;  
 }
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
 #center {
     justify-content: center;
     align-items: center;   
