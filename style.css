@@ -138,6 +138,12 @@ border-color: #d0d8f0;
     border-color: #d0d8f0;
     grid-gap: 10px;
 }
+#banner2 {
+    background-color: #b7b1f5;
+    border-style: groove;
+    border-width: 0.5em;
+    border-color: #d0d8f0;
+}
 #pic {
     grid-column-start: 1;
     grid-column-end: 2;
@@ -167,31 +173,44 @@ border-color: #d0d8f0;
 /* projects section styles */
 #projects {
     background-color:#6F8293;
+    display: block;
 }
 .projectsflex {
     display: flex;
+    overflow: hidden;
+    min-height: 100vh;
+}
+.project {
+ transition: 
+    font-size 0.7s
+    flex 0.7s;
+font-size: 20px;
+flex: 1;
+display: flex;
+flex-direction: column;
+    /* check cubic bezier  */
 }
 .project1 {
-    background-image: url("https://image.ibb.co/mOFkWU/bridesmaid_box_logo.png");
+    background-color: #ABD5F3 ;
 }
-project2 {
-    background-image: url("https://image.ibb.co/mOFkWU/bridesmaid_box_logo.png");   
+.project2 {
+    background-color: #D0D8F0 ;
 }
-project3 {
-    background-image: url("https://image.ibb.co/mOFkWU/bridesmaid_box_logo.png");   
+.project3 {
+    background-color: #EEF1F7 ;  
 }
-project4 {
-    background-image: url("https://image.ibb.co/mOFkWU/bridesmaid_box_logo.png");   
+.project4 {
+   background-color: #B8D5F0;
 }
-project5 {
-    background-image: url("https://image.ibb.co/mOFkWU/bridesmaid_box_logo.png");   
+.project5 {
+    background-color: #ABD5F3 ;
 }
-project6 {
-    background-image: url("https://image.ibb.co/mOFkWU/bridesmaid_box_logo.png");   
+.project6 {
+    background-color: #D0D8F0 ;
 }
-project7 {
-    background-image: url("https://image.ibb.co/mOFkWU/bridesmaid_box_logo.png");   
+.project7 {
+    background-color: #EEF1F7 ;  
 }
-project8 {
-    background-image: url("https://image.ibb.co/mOFkWU/bridesmaid_box_logo.png");   
+.project8 {
+   background-color: #B8D5F0;
 }
