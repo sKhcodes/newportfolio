@@ -34,7 +34,17 @@ lastdiv.addEventListener("animationend", function() {
          div.style.display = "inline-grid";
      }
  })
+// Navbar styles inc sticky top
+var navbar = document.querySelector("nav");
+var sticky = navbar.offsetTop;
 
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
 //  Flex panels for projects
 const projects= document.querySelectorAll('.project');
 projects.forEach(project => project.addEventListener('click', () => {

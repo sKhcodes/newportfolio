@@ -163,31 +163,36 @@ font-family: 'Montserrat', sans-serif;
     border-color: #d0d8f0;
     display: block;
 }
+
 #pic {
     grid-column-start: 1;
     grid-column-end: 2;
-    grid-row-start: 2;
+    grid-row-start: 1;
     grid-row-end: 4;
+    margin-top: 2em;
  
 }
         #mypic {
-                height: 10em;
+                min-height: 10em;
+                max-height:15em;
                 border-radius: 20%;
               }
         
 #text {
+    margin-top: 2em;
     grid-column-start: 2;
-    grid-column-end: 5;
-    grid-row-start: 2;
-    grid-row-end: 3;
-
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+   padding-left: 2em;
 }
 #textlist {
     grid-column-start: 2;
     grid-column-end: 5;
-    grid-row-start: 3;
+    grid-row-start: 2;
     grid-row-end: 4;
-    
+    margin-bottom: 5em;
+   padding-left: 2em;
 }
 /* projects section styles */
 #projects {
