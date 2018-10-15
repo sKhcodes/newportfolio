@@ -159,7 +159,7 @@ min-height: 50vh;
 max-height: 100vh;
 width: 100%;
 display: inline-grid;
-grid-template-rows: 1fr 2fr 2fr;
+grid-template-rows: 1fr 1fr ;
 grid-template-columns: 1fr 1fr 1fr 1fr;
 border-style: none;
 border-width: 0.5em;
@@ -223,7 +223,7 @@ font-family: 'Montserrat', sans-serif;
     grid-column-start: 2;
     grid-column-end: 5;
     grid-row-start: 2;
-    grid-row-end: 4;
+    grid-row-end: 3;
     margin-bottom: 5em;
    padding-left: 2em;
 }
@@ -290,3 +290,23 @@ flex-direction: column;
 }
 
 /* Contact Section Styles */
+
+.linkedin {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.twitter {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.email {
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+.gitter {
+    grid-column-start: 4;
+    grid-column-end: 5;
+}
